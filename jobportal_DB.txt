@@ -1,0 +1,20 @@
+
+Database name = jobportal
+
+tables:
+
+->recuiters
+id, name, phone, email, password
+
+->candidates
+id, name, phone, email, password
+
+->jobs
+id, company, profile, experience, location, Posted By, Skills, Description
+
+-> CandidateJob
+JobID , CandidateID
+jobID --> id of Jobs table
+CandidateID --> id of candidates table
+
+
