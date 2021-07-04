@@ -1,0 +1,42 @@
+.navbar{
+    width: 100vw;
+    height: 3.5rem;
+    position: fixed;
+    background-color: brown;
+    box-sizing: border-box;
+    padding: 10px;
+    z-index: 5px;
+   
+}
+
+.navbar > span:first-of-type{
+    float: left;
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+    border: 1px solid;
+    padding: 5px;
+    
+}
+
+.navbar > div{
+    float: right;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(247, 222, 222);    
+    
+}
+
+.navbar > div > span{
+    position: relative;
+    top: 5px;
+    margin-right: 3rem;
+    cursor: pointer;
+}
+
+
+#profile{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(247, 222, 222);    
+}
