@@ -3,6 +3,7 @@ import { useState } from 'react';
 import styles from './Login_SignUp.module.css';
 import Signup from './Signup';
 import Login from './Login';
+import Hoc_Binder from '../common_component/Hoc_Binder';
 import { baseurl, url } from '../../URL';
 
 function Login_SignUp_Component(){
@@ -42,7 +43,9 @@ function Login_SignUp_Component(){
         //         console.log("Sign-up successful")
         //     }
         // })
-        // .catch(error => console.log('Error while Sign-up', error));        
+        // .catch(error => console.log('Error while Sign-up', error));       
+        
+        setSignUP(false);
     }
 
     const onSubmit_SignInform = (e) => {
@@ -81,13 +84,16 @@ function Login_SignUp_Component(){
         //     }
         // })
         // .catch(error => console.log('Error while Sign-In', error));  
-        window.location = "/recruiter-portal";
-       
-        
+        if(isRecut){
+                        window.location = "/recruiter-portal";
+                    }
+                    else{
+                        window.location = "/candidate-portal";
+                    }
     }
 
     return(
-        <div className="container">
+        <Hoc_Binder className="container">
             <div className={styles.Login_SignUp_card}>
                 <div className={styles.top_bar}>
                     <button type="button" 
@@ -126,7 +132,7 @@ function Login_SignUp_Component(){
                </diV>
 
             </div>
-        </div>
+        </Hoc_Binder>
     );
 }
 

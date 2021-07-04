@@ -1,9 +1,10 @@
 import styles from './CandidateLanding.module.css';
 import ViewJob from '../common_component/ViewJob';
+import Hoc_Binder from '../common_component/Hoc_Binder';
 
 function CandidateLandingPage(){
     return(
-        <div >
+        <Hoc_Binder >
             <div className={styles.navbar}>
                 <span >Candidate Portal</span>
                 <div className="col-sm-8">
@@ -33,7 +34,7 @@ function CandidateLandingPage(){
                 </div>
             </div>
 
-        </div>
+        </Hoc_Binder>
     )
 }
 

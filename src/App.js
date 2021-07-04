@@ -13,7 +13,7 @@ function App() {
     <Router >
        <Route exact path="/" component={Login_SignUp_Component} />
        <Route exact path="/recruiter-portal" component={RecuiterLandingPage} />
-       <Route exact path="/candiadte-portal" component={CandidateLandingPage} />
+       <Route exact path="/candidate-portal" component={CandidateLandingPage} />
     </Router>
   );
 }

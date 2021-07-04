@@ -3,6 +3,7 @@ import styles from './RecuiterLanding.module.css';
 import PostJob from './PostJob';
 import Profile from '../common_component/Profile';
 import ViewJob from '../common_component/ViewJob';
+import Hoc_Binder from '../common_component/Hoc_Binder';
 import { baseurl } from '../../URL';
 
 function RecuiterLandingPage() {
@@ -42,7 +43,7 @@ function RecuiterLandingPage() {
         console.log(e)
     }
      return(
-         <div>
+         <Hoc_Binder>
             <div className={styles.navbar}>
                 <span>Recuiter Portal</span>
                 <div>
@@ -63,7 +64,7 @@ function RecuiterLandingPage() {
                     <Profile />
                 }
             </div>
-         </div>
+         </Hoc_Binder>
      )
 }
 
